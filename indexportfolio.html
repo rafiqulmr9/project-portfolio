@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Rafiqul Islam — Full Stack Web Developer, CPA Marketing professional, Data Analyst and Supply Chain & Accounts professional." />
+  <meta name="theme-color" content="#0b1120" />
+  <title>Muhammad Rafiqul Islam | Professional Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b1120",
+            panel: "#111a2e",
+            accent: "#38bdf8"
+          },
+          boxShadow: {
+            glow: "0 20px 70px rgba(56,189,248,.12)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0b1120; }
+    .grid-bg {
+      background-image: linear-gradient(rgba(148,163,184,.045) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(148,163,184,.045) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 90%);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #7dd3fc, #38bdf8, #a5f3fc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .nav-link { transition: color .2s ease; }
+    .nav-link:hover { color: #38bdf8; }
+    .card { transition: transform .25s ease, border-color .25s ease, background .25s ease; }
+    .card:hover { transform: translateY(-5px); border-color: rgba(56,189,248,.45); }
+    .section-anchor { scroll-margin-top: 90px; }
+  </style>
+</head>
+<body class="text-slate-100 antialiased selection:bg-sky-400/30">
+  <div class="fixed inset-0 grid-bg pointer-events-none"></div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-ink/85 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#home" class="text-2xl font-black tracking-tight">MRI<span class="text-sky-400">.</span></a>
+      <button id="menuButton" class="rounded-lg border border-white/10 p-2 text-slate-200 md:hidden" aria-label="Toggle navigation" aria-expanded="false">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+      <div id="navLinks" class="hidden absolute left-0 right-0 top-full flex-col gap-1 border-b border-white/10 bg-ink p-4 md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+        <a class="nav-link rounded-lg px-3 py-2 text-sm text-slate-300" href="#home">Home</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm text-slate-300" href="#about">About</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm text-slate-300" href="#skills">Skills</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm text-slate-300" href="#experience">Experience</a>
+        <a class="nav-link rounded-lg px-3 py-2 text-sm text-slate-300" href="#services">Services</a>
+        <a class="mt-2 rounded-lg bg-sky-500 px-4 py-2.5 text-center text-sm font-semibold text-slate-950 transition hover:bg-sky-400 md:mt-0" href="#contact">Let's Connect <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative">
+    <!-- Hero -->
+    <section id="home" class="section-anchor relative flex min-h-screen items-center overflow-hidden pt-28">
+      <div class="absolute -right-40 top-28 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl"></div>
+      <div class="absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-blue-600/10 blur-3xl"></div>
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-[1.2fr_.8fr] lg:px-8">
+        <div class="relative">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/5 px-4 py-2 text-xs font-semibold tracking-[.18em] text-sky-300">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span> PROFESSIONAL PORTFOLIO
+          </div>
+          <p class="mb-4 text-sm font-bold uppercase tracking-[.3em] text-sky-400">Hello, I'm</p>
+          <h1 class="max-w-3xl text-5xl font-black leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+            Muhammad<br />Rafiqul <span class="gradient-text">Islam.</span>
+          </h1>
+          <h2 class="mt-7 text-xl font-semibold text-slate-200 sm:text-2xl">Full Stack Web Developer</h2>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-400">
+            A technology-focused and business-oriented professional with 8 years of corporate experience and 3 years of freelancing experience in CPA Marketing and Data Analysis.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="#experience" class="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 font-bold text-slate-950 shadow-glow transition hover:-translate-y-0.5 hover:bg-sky-400">
+              Explore My Experience <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </a>
+            <a href="#contact" class="rounded-xl border border-slate-600 px-6 py-3.5 font-semibold text-slate-200 transition hover:border-sky-400 hover:text-sky-300">Contact Me</a>
+          </div>
+          <div class="mt-9 flex items-center gap-5 text-slate-400">
+            <a class="transition hover:text-sky-400" href="https://github.com/rafiqulmr9" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.555.103.758-.241.758-.535v-2.08c-3.09.672-3.744-1.31-3.744-1.31-.505-1.284-1.233-1.626-1.233-1.626-1.008-.69.076-.676.076-.676 1.115.078 1.702 1.145 1.702 1.145.99 1.696 2.596 1.206 3.228.922.1-.718.388-1.207.705-1.484-2.467-.28-5.06-1.234-5.06-5.49 0-1.212.433-2.202 1.144-2.978-.115-.28-.496-1.41.108-2.94 0 0 .933-.299 3.057 1.137a10.63 10.63 0 0 1 5.562 0c2.123-1.436 3.055-1.137 3.055-1.137.606 1.53.225 2.66.11 2.94.713.776 1.142 1.766 1.142 2.978 0 4.267-2.597 5.207-5.072 5.482.399.344.754 1.02.754 2.056v3.06c0 .297.2.644.764.534A11.1 11.1 0 0 0 12 .9z"/></svg></a>
+            <a class="transition hover:text-sky-400" href="https://www.linkedin.com/in/md-rafiqul-islam-381015231/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.353V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="transition hover:text-sky-400" href="https://mail.google.com/mail/?view=cm&fs=1&to=rafiqulislammr6%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i data-lucide="mail" class="h-5 w-5"></i></a>
+            <a class="transition hover:text-sky-400" href="https://wa.me/8801924899441" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="message-circle" class="h-5 w-5"></i></a>
+            <a class="transition hover:text-sky-400" href="https://www.facebook.com/share/1ZaCyJaQyX/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.019 10.125 11.88v-8.4H7.078v-3.48h3.047V9.42c0-3.017 1.792-4.695 4.533-4.695 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.257h3.328l-.532 3.48h-2.796v8.4C19.612 23.092 24 18.092 24 12.073z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-md">
+          <div class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-sky-400/20 to-blue-700/10 blur-2xl"></div>
+          <div class="relative rounded-[2rem] border border-sky-400/20 bg-gradient-to-br from-[#14243c] to-[#0d1729] p-8 shadow-glow sm:p-10">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-[.22em] text-sky-300">My approach</span>
+              <i data-lucide="sparkles" class="h-5 w-5 text-sky-300"></i>
+            </div>
+            <div class="my-12 text-center">
+              <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-3xl border border-sky-300/30 bg-sky-400/10">
+                <i data-lucide="code-2" class="h-14 w-14 text-sky-300"></i>
+              </div>
+              <h3 class="mt-7 text-2xl font-extrabold">Think. Analyze. Build.</h3>
+              <p class="mt-2 text-sm text-slate-400">Technology · Marketing · Business</p>
+            </div>
+            <div class="grid grid-cols-3 gap-3 border-t border-white/10 pt-6 text-center">
+              <div><p class="text-2xl font-black text-sky-300">8+</p><p class="mt-1 text-[11px] leading-4 text-slate-400">Corporate years</p></div>
+              <div><p class="text-2xl font-black text-sky-300">3+</p><p class="mt-1 text-[11px] leading-4 text-slate-400">Freelance years</p></div>
+              <div><p class="text-2xl font-black text-sky-300">2</p><p class="mt-1 text-[11px] leading-4 text-slate-400">Career areas</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-anchor border-y border-white/5 bg-panel/70 py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mb-12">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.28em] text-sky-400">About me</p>
+          <h2 class="text-3xl font-black sm:text-4xl">A little about myself</h2>
+        </div>
+        <div class="grid gap-10 lg:grid-cols-[1.3fr_.7fr]">
+          <div class="space-y-5 text-base leading-8 text-slate-300">
+            <p>I am Muhammad Rafiqul Islam, a technology-focused and business-oriented professional. My professional journey combines web development, digital marketing, data analysis and corporate business operations.</p>
+            <p>I have been working at <strong class="text-white">Bio Trade International</strong> for 8 years as a Senior Admin Officer in the Supply Chain & Accounts department. Bio Trade International supplies emergency medical equipment and reagents.</p>
+            <p>Alongside my corporate career, I have 3 years of freelancing experience in CPA Marketing and Data Analysis. I enjoy learning new technologies, solving practical problems and using data to support better decisions.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-ink/70 p-7">
+            <h3 class="mb-5 text-lg font-bold">Professional focus</h3>
+            <ul class="space-y-4 text-sm text-slate-300">
+              <li class="flex gap-3"><i data-lucide="monitor" class="h-5 w-5 shrink-0 text-sky-400"></i> Web development & digital solutions</li>
+              <li class="flex gap-3"><i data-lucide="trending-up" class="h-5 w-5 shrink-0 text-sky-400"></i> CPA marketing & campaign analysis</li>
+              <li class="flex gap-3"><i data-lucide="chart-no-axes-combined" class="h-5 w-5 shrink-0 text-sky-400"></i> Data analysis & reporting</li>
+              <li class="flex gap-3"><i data-lucide="briefcase-business" class="h-5 w-5 shrink-0 text-sky-400"></i> Supply chain & accounts operations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-anchor py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mb-12">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.28em] text-sky-400">My expertise</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Skills &amp; technologies</h2>
+          <p class="mt-4 max-w-2xl text-slate-400">A combination of technology, marketing, analytics and business operations.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="code" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Web Development</h3><p class="mt-2 text-xs leading-5 text-slate-400">HTML, CSS, JavaScript, React, Tailwind CSS</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="megaphone" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">CPA Marketing</h3><p class="mt-2 text-xs leading-5 text-slate-400">Campaigns, affiliate marketing, optimization</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="chart-column" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Data Analysis</h3><p class="mt-2 text-xs leading-5 text-slate-400">Data processing, analysis and reporting</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="file-spreadsheet" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Excel &amp; Reporting</h3><p class="mt-2 text-xs leading-5 text-slate-400">Business reports and data management</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="truck" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Supply Chain</h3><p class="mt-2 text-xs leading-5 text-slate-400">Coordination and procurement support</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="calculator" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Accounts</h3><p class="mt-2 text-xs leading-5 text-slate-400">Accounts and administrative support</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="database" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Business Operations</h3><p class="mt-2 text-xs leading-5 text-slate-400">Documentation and operational processes</p></div>
+          <div class="card rounded-xl border border-white/10 bg-panel p-5"><i data-lucide="lightbulb" class="mb-4 h-6 w-6 text-sky-400"></i><h3 class="font-bold">Problem Solving</h3><p class="mt-2 text-xs leading-5 text-slate-400">Analytical thinking and continuous learning</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-anchor border-y border-white/5 bg-panel/70 py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mb-12">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.28em] text-sky-400">My journey</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Professional experience</h2>
+        </div>
+        <div class="relative max-w-4xl space-y-6">
+          <article class="card rounded-2xl border border-white/10 bg-ink p-7 sm:p-9">
+            <div class="flex flex-wrap items-start justify-between gap-4">
+              <div><span class="text-xs font-bold uppercase tracking-[.2em] text-sky-400">Corporate experience</span><h3 class="mt-3 text-2xl font-extrabold">Senior Admin Officer</h3><p class="mt-2 font-semibold text-slate-300">Bio Trade International</p><p class="mt-1 text-sm text-slate-500">Supply Chain &amp; Accounts Department</p></div>
+              <span class="rounded-lg border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-sm font-bold text-sky-300">8 Years</span>
+            </div>
+            <p class="mt-6 text-sm leading-7 text-slate-400">Professional experience in supply chain and accounts operations at a company specializing in emergency medical equipment and reagent supply. Work includes administrative operations, supply chain coordination, procurement support, documentation and accounts-related activities.</p>
+          </article>
+          <article class="card rounded-2xl border border-white/10 bg-ink p-7 sm:p-9">
+            <div class="flex flex-wrap items-start justify-between gap-4">
+              <div><span class="text-xs font-bold uppercase tracking-[.2em] text-sky-400">Freelance experience</span><h3 class="mt-3 text-2xl font-extrabold">CPA Marketer &amp; Data Analyst</h3><p class="mt-2 font-semibold text-slate-300">Freelance</p></div>
+              <span class="rounded-lg border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-sm font-bold text-sky-300">3 Years</span>
+            </div>
+            <p class="mt-6 text-sm leading-7 text-slate-400">Freelancing experience in CPA marketing, digital campaign activities, data analysis, performance tracking and reporting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-anchor py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mb-12">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.28em] text-sky-400">What I do</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Professional services</h2>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="card rounded-2xl border border-white/10 bg-panel p-7"><i data-lucide="code-2" class="mb-6 h-9 w-9 text-sky-400"></i><h3 class="text-lg font-extrabold">Web Development</h3><p class="mt-3 text-sm leading-7 text-slate-400">Modern, responsive and user-friendly web development solutions.</p></article>
+          <article class="card rounded-2xl border border-white/10 bg-panel p-7"><i data-lucide="trending-up" class="mb-6 h-9 w-9 text-sky-400"></i><h3 class="text-lg font-extrabold">CPA Marketing</h3><p class="mt-3 text-sm leading-7 text-slate-400">CPA marketing, campaign activities and performance optimization.</p></article>
+          <article class="card rounded-2xl border border-white/10 bg-panel p-7"><i data-lucide="bar-chart-3" class="mb-6 h-9 w-9 text-sky-400"></i><h3 class="text-lg font-extrabold">Data Analysis</h3><p class="mt-3 text-sm leading-7 text-slate-400">Data analysis, reporting and business performance insights.</p></article>
+          <article class="card rounded-2xl border border-white/10 bg-panel p-7"><i data-lucide="briefcase-business" class="mb-6 h-9 w-9 text-sky-400"></i><h3 class="text-lg font-extrabold">Business Operations</h3><p class="mt-3 text-sm leading-7 text-slate-400">Supply chain coordination, administrative and accounts support.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-anchor border-t border-white/5 bg-panel/70 py-24">
+      <div class="mx-auto max-w-5xl px-5 text-center lg:px-8">
+        <p class="mb-3 text-xs font-bold uppercase tracking-[.28em] text-sky-400">Get in touch</p>
+        <h2 class="text-3xl font-black sm:text-5xl">Let's work together.</h2>
+        <p class="mx-auto mt-5 max-w-2xl leading-8 text-slate-400">Have a project, business opportunity or collaboration in mind? Feel free to contact me through email, phone or LinkedIn.</p>
+        <div class="mt-9 flex flex-wrap justify-center gap-3">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafiqulislammr6%40gmail.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 font-bold text-slate-950 transition hover:bg-sky-400"><i data-lucide="mail" class="h-4 w-4"></i>Email Me</a>
+          <a href="https://wa.me/8801924899441" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-slate-600 px-6 py-3.5 font-semibold transition hover:border-sky-400 hover:text-sky-300"><i data-lucide="message-circle" class="h-4 w-4"></i>WhatsApp</a>
+          <a href="https://www.linkedin.com/in/md-rafiqul-islam-381015231/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-slate-600 px-6 py-3.5 font-semibold transition hover:border-sky-400 hover:text-sky-300"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 shrink-0 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.353V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+        </div>
+        <div class="mt-12 grid gap-4 rounded-2xl border border-white/10 bg-ink p-6 text-left sm:grid-cols-2">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafiqulislammr6%40gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-sm text-slate-300 hover:text-sky-300"><i data-lucide="mail" class="h-5 w-5 text-sky-400"></i>rafiqulislammr6@gmail.com</a>
+          <a href="https://wa.me/8801924899441" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-sm text-slate-300 hover:text-sky-300"><i data-lucide="message-circle" class="h-5 w-5 text-emerald-400"></i>+880 1924-899441</a>
+          <a href="tel:+8801740160693" class="flex items-center gap-3 text-sm text-slate-300 hover:text-sky-300"><i data-lucide="phone" class="h-5 w-5 text-sky-400"></i>+880 1740-160693</a>
+          <a href="https://www.facebook.com/share/1ZaCyJaQyX/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-sm text-slate-300 hover:text-sky-300"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 shrink-0 fill-current"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.019 10.125 11.88v-8.4H7.078v-3.48h3.047V9.42c0-3.017 1.792-4.695 4.533-4.695 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.257h3.328l-.532 3.48h-2.796v8.4C19.612 23.092 24 18.092 24 12.073z"/></svg>Facebook Profile</a>
+          <a href="https://github.com/rafiqulmr9" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-sm text-slate-300 hover:text-sky-300"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 shrink-0 fill-current"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.555.103.758-.241.758-.535v-2.08c-3.09.672-3.744-1.31-3.744-1.31-.505-1.284-1.233-1.626-1.233-1.626-1.008-.69.076-.676.076-.676 1.115.078 1.702 1.145 1.702 1.145.99 1.696 2.596 1.206 3.228.922.1-.718.388-1.207.705-1.484-2.467-.28-5.06-1.234-5.06-5.49 0-1.212.433-2.202 1.144-2.978-.115-.28-.496-1.41.108-2.94 0 0 .933-.299 3.057 1.137a10.63 10.63 0 0 1 5.562 0c2.123-1.436 3.055-1.137 3.055-1.137.606 1.53.225 2.66.11 2.94.713.776 1.142 1.766 1.142 2.978 0 4.267-2.597 5.207-5.072 5.482.399.344.754 1.02.754 2.056v3.06c0 .297.2.644.764.534A11.1 11.1 0 0 0 12 .9z"/></svg>github.com/rafiqulmr9</a>
+          <a href="https://www.linkedin.com/in/md-rafiqul-islam-381015231/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-sm text-slate-300 hover:text-sky-300"><svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 shrink-0 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.353V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative border-t border-white/10 px-5 py-8 text-center">
+    <p class="text-sm text-slate-400">© <span id="year"></span> Muhammad Rafiqul Islam. All rights reserved.</p>
+    <p class="mt-2 text-xs text-sky-400">Designed with purpose. Built for opportunities.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+    menuButton.addEventListener("click", () => {
+      const isOpen = !navLinks.classList.contains("hidden");
+      navLinks.classList.toggle("hidden");
+      navLinks.classList.toggle("flex");
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 768) {
+          navLinks.classList.add("hidden");
+          navLinks.classList.remove("flex");
+          menuButton.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
